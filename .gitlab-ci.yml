@@ -3,7 +3,7 @@
 # Assumes `npm run build` will build application into build/
 # VARIABLES MUST BE FILLED OUT FOR THIS TO FUNCTION PROPERLY
 ################################################################
-image: node:10
+image: larcado/nodejs-chrome
 stages:
   - install
   - quality
