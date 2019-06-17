@@ -3,7 +3,7 @@
 # Assumes `npm run build` will build application into build/
 # VARIABLES MUST BE FILLED OUT FOR THIS TO FUNCTION PROPERLY
 ################################################################
-image: node:alpine
+image: node:10
 stages:
   - install
   - quality
@@ -36,7 +36,6 @@ lint-and-test:
 #     - yarn ci
 
 build-pack:
-  image: node:11
   stage: build
   dependencies:
     - install
