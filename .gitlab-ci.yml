@@ -33,16 +33,14 @@ lint-and-test:
   stage: quality
   script:
     - ls
-#     - npm ci
-#     - npm run ci
+#     - yarn ci
 
 build-pack:
   stage: build
   dependencies:
     - install
   script:
-    - npm install
-    - CI=false npm run build --prod
+    - CI=false yarn build --prod
   artifacts:
     paths:
       - build/
