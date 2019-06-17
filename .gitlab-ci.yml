@@ -36,7 +36,7 @@ lint-and-test:
 #     - yarn ci
 
 build-pack:
-  image: ineva/react-snap
+  image: selenoid/chrome
   stage: build
   dependencies:
     - install
