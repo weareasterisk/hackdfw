@@ -36,6 +36,7 @@ lint-and-test:
 #     - yarn ci
 
 build-pack:
+  image: ineva/react-snap
   stage: build
   dependencies:
     - install
