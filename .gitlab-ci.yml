@@ -3,7 +3,7 @@
 # Assumes `npm run build` will build application into build/
 # VARIABLES MUST BE FILLED OUT FOR THIS TO FUNCTION PROPERLY
 ################################################################
-image: buildkite/puppeteer
+image: node:10
 stages:
   - install
   - quality
