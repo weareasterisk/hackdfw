@@ -3,7 +3,7 @@
 # Assumes `npm run build` will build application into build/
 # VARIABLES MUST BE FILLED OUT FOR THIS TO FUNCTION PROPERLY
 ################################################################
-image: registry.gitlab.com/weareasterisk/registry/node-chrome:10
+image: registry.gitlab.com/weareasterisk/registry/node-chrome:10-alpine
 stages:
   - install
   - quality
