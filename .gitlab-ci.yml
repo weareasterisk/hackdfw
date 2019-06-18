@@ -18,6 +18,7 @@ variables:
 install:
   stage: install
   script:
+    - npm install puppeteer --unsafe-perm=true --allow-root
     - npm install -g yarn
     - yarn
   cache:
