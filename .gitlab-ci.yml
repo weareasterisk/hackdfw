@@ -7,7 +7,7 @@ image: registry.gitlab.com/weareasterisk/registry/node-chrome:10
 
 stages:
   - install
-  - quality
+  #- quality
   - build
   - deploy
 
@@ -30,10 +30,10 @@ install:
     - node_modules
     expire_in: 30 minutes
 
-lint-and-test:
-  stage: quality
-  script:
-    - ls
+#lint-and-test:
+#  stage: quality
+#  script:
+#    - ls
 #     - yarn ci
 
 build-pack:
