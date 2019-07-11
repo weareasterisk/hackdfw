@@ -4,7 +4,7 @@ const PageWrapper = (props) => {
   return (
     <React.Fragment>
       // TODO: Add navbar part here
-      {...props.children}
+      {props.children}
     </React.Fragment>
   )
 };
