@@ -1,15 +1,14 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "HackDFW",
+  "short_name": "HackDFW",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "https://cdn.weareasterisk.com/hackathon-assets/hackdfw/logos/favicons/android-chrome-96x96.png?v=7kowzlzGE6",
+      "sizes": "96x96",
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
 }
