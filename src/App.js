@@ -4,13 +4,13 @@ import {
   Route,
   Switch
 } from "react-router-dom";
-import SplashPage from "./components/splashpage";
+import HomePage from "./components/pages/homepage";
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={SplashPage}/>
+        <Route exact path="/" component={HomePage}/>
       </Switch>
     </BrowserRouter>
   );
