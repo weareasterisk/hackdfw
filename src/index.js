@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'semantic-ui-less/semantic.less'
+import './styles/aggregrator.scss'
 
 const root = document.getElementById('root');
 

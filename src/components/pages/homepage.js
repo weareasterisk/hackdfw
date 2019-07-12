@@ -9,7 +9,9 @@ export default class HomePage extends Component {
   render() {
     return (
       <PageWrapper>
+        <div className="start-section">
 
+        </div>
       </PageWrapper>
     )
   }
