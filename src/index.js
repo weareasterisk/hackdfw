@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './styles/aggregrator.scss'
+import "typeface-montserrat";
+import 'babel-polyfill'
 
 const root = document.getElementById('root');
 

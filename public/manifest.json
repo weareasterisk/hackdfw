@@ -3,8 +3,13 @@
   "short_name": "HackDFW",
   "icons": [
     {
-      "src": "https://cdn.weareasterisk.com/hackathon-assets/hackdfw/logos/favicons/android-chrome-96x96.png?v=7kowzlzGE6",
-      "sizes": "96x96",
+      "src": "https://cdn.weareasterisk.com/hackathon-assets/hackdfw/logos/favicons/android-chrome-192x192.png?v=qAB0PA0nEd",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.weareasterisk.com/hackathon-assets/hackdfw/logos/favicons/android-chrome-512x512.png?v=qAB0PA0nEd",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],

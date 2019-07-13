@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
-import PageWrapper from '../pagewrapper'
+import SectionSpacer from "../sectionspacer"
+import Start from "../homepagecomponents/start"
+import About from "../homepagecomponents/about"
 
 export default class HomePage extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
-      <PageWrapper>
-        <div className="start-section">
-
-        </div>
-      </PageWrapper>
+      <React.Fragment>
+        <Start/>
+        <SectionSpacer/>
+        <About/>
+        <SectionSpacer/>
+        
+      </React.Fragment>
     )
   }
 }
