@@ -199,7 +199,11 @@ h1 {
   height: 54px;
 }
 
+.f-20 {
+  font-size: 20px;
+}
+
 .about-text {
   @extend .text-justify;
-  font-size: 20px;
+  @extend .f-20;
 }
