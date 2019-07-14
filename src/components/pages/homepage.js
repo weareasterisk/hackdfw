@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import SectionSpacer from "../sectionspacer"
-import Start from "../homepagecomponents/start"
-import About from "../homepagecomponents/about"
+import Start from "../homepage/start"
+import About from "../homepage/about"
+import Schedule from "../homepage/schedule"
+import ScheduleData from "../../contentdata/scheduledata"
 
 export default class HomePage extends Component {
   render() {
@@ -11,7 +13,9 @@ export default class HomePage extends Component {
         <SectionSpacer/>
         <About/>
         <SectionSpacer/>
-        
+        <Schedule
+          data={ScheduleData}
+        />
       </React.Fragment>
     )
   }

@@ -6,7 +6,7 @@ const About = () => {
     <React.Fragment>
       <Container>
         <h1>About</h1>
-        <blockquote>
+        <blockquote className="about-text">
           HackDFW powered by Say Yes to Dallas is a fast-paced innovation marathon. It's a celebration of creative minds--
           where sponsors and aspiring engineers flock together for a weekend to help each other in learning a new skill or showcasing a talent.
           HackDFW will take place over the weekend of October 5th and 6th. Over 500 students, professionals, and enthusiasts will come together at HackDFW

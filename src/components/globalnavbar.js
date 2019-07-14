@@ -50,7 +50,7 @@ export default class GlobalNavBar extends Component {
     return (
       <React.Fragment>
         <header role="main">
-          <Navbar expand="md" sticky="top" full className="p-around-0" style={this.state.isOpen? {backgroundColor: "#00adef", paddingBottom: "16px!important"} : {}}>
+          <Navbar expand="md" sticky="top" className="p-around-0" style={this.state.isOpen? {backgroundColor: "#00adef", paddingBottom: "16px!important"} : {}}>
             <NavbarToggler onClick={this.toggle} className="float-right" />
             <Collapse isOpen={this.state.isOpen} navbar className="nav-center justify-content-center text-center">
               <Nav navbar className="w-100">
