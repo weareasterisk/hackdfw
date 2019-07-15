@@ -8,7 +8,7 @@ const Schedule = (props) => {
     <React.Fragment>
       { props.data.length >= 1 &&
         <Container>
-          <h1>Schedule</h1>
+          <h1 className="title-underline border-glass">Schedule</h1>
           <Row className="container-fluid">
             {props.data.map((days) =>
               <Col xl={6} lg={6} md={12} sm={12} className="pb-5">

@@ -63,7 +63,7 @@ export default class GlobalNavBar extends Component {
                     <NavLink className="link-white nav-link" onClick={this.close}>schedule</NavLink>
                   </Col>
                   <Col lg={3} md={4} className="text-center">
-                    <NavLink className="link-white nav-link" onClick={this.close}>faq</NavLink>
+                    <NavLink className="link-white nav-link" onClick={this.close}>FAQ</NavLink>
                   </Col>
                 </Row>
                 <img src="https://cdn.weareasterisk.com/logos/png/emblem-all-white-hd-min.png" alt="asterisk" className="asterisk-nav-logo"/>

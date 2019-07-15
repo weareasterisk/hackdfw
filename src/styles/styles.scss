@@ -207,3 +207,12 @@ h1 {
   @extend .text-justify;
   @extend .f-20;
 }
+
+.title-underline {
+  border-bottom: 4px solid;
+  display: table;
+}
+
+.border-glass {
+  border-color: $sy2d-glass;
+}
