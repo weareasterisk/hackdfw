@@ -192,11 +192,11 @@ h1 {
 .start-info {
   @extend .font-weight-medium;
   @extend .text-center;
-  font-size: 20px;
+  @extend .f-20;
 }
 
 .section-spacer {
-  height: 54px;
+  height: 3.375rem;
 }
 
 .f-20 {
@@ -209,10 +209,44 @@ h1 {
 }
 
 .title-underline {
-  border-bottom: 4px solid;
+  margin-bottom: 2rem;
+  padding-bottom: .6rem;
   display: table;
+  position:relative;
+}
+
+.title-underline:after {
+  content: '';
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height: .75rem;
+}
+
+.background-glass {
+  background: $sy2d-glass;
 }
 
 .border-glass {
   border-color: $sy2d-glass;
+}
+
+.about-title {
+  @extend .title-underline;
+}
+
+.about-title:after {
+  @extend .background-glass;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.logo-caption {
+  @extend .font-weight-medium;
+  @extend .text-center;
+  padding-top: .5rem;
+  padding-bottom: 1.5rem;
 }

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <React.Fragment>
       <Container>
-        <h1 className="title-underline border-glass">About</h1>
+        <h1 className="about-title">About</h1>
         <blockquote className="about-text">
           HackDFW powered by Say Yes to Dallas is a fast-paced innovation marathon. It's a celebration of creative minds--
           where sponsors and aspiring engineers flock together for a weekend to help each other in learning a new skill or showcasing a talent.
