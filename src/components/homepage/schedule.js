@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "reactstrap/es/Container";
-import {Col, Row} from "reactstrap";
+import {Col, Row, Table} from "reactstrap";
 import ScheduleItem from "../schedule/scheduleitem";
 
 const Schedule = (props) => {
@@ -8,20 +8,33 @@ const Schedule = (props) => {
     <React.Fragment>
       { props.data.length >= 1 &&
         <Container>
-          <h1 className="title-underline border-glass">Schedule</h1>
-          <Row className="container-fluid">
-            {props.data.map((days) =>
-              <Col xl={6} lg={6} md={12} sm={12} className="pb-5">
-                <h3>{days.title}</h3>
+          <h1 className="schedule-title">Schedule</h1>
+          <Row>
+            <Col xl={5} lg={5} md={12} sm={12} className="pb-5">
+              <h3 className="schedule-day-title">{props.data[0].title}</h3>
+              <Table cassName="schedule-table">
                 {
-                  days.events.map((event) =>
+                  props.data[0].events.map((event) =>
                     <ScheduleItem
                       event={event}
                     />
                   )
                 }
-              </Col>
-            )}
+              </Table>
+            </Col>
+            <Col xl={2} lg={2} md={0} sm={0}/>
+            <Col xl={5} lg={5} md={12} sm={12} className="pb-5">
+              <h3 className="schedule-day-title">{props.data[1].title}</h3>
+              <Table className="schedule-table">
+              {
+                props.data[1].events.map((event) =>
+                  <ScheduleItem
+                    event={event}
+                  />
+                )
+              }
+              </Table>
+            </Col>
           </Row>
         </Container>
       }

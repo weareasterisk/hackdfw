@@ -12,6 +12,11 @@ h1 {
   text-transform: uppercase;
 }
 
+.table td {
+  border: 0;
+  padding: .5rem;
+}
+
 .start-section {
   height: 100vh;
   width: auto;
@@ -209,35 +214,117 @@ h1 {
 }
 
 .title-underline {
+  &:after {
+    content: '';
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height: .6rem;
+  }
   margin-bottom: 2rem;
   padding-bottom: .6rem;
   display: table;
   position:relative;
 }
 
-.title-underline:after {
-  content: '';
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  height: .75rem;
+.subtitle-underline {
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: .3rem;
+  }
+  margin-bottom: 1rem;
+  padding-bottom: .3rem;
+  display: table;
+  position: relative;
 }
 
 .background-glass {
   background: $sy2d-glass;
 }
 
+.background-night {
+  background: $sy2d-night;
+}
+
+.background-apple {
+  background: $sy2d-apple;
+}
+
+.background-violet {
+  background: $sy2d-violet;
+}
+
+.background-bubble {
+  background: $sy2d-bubble;
+}
+
+.background-leaf {
+  background: $sy2d-leaf;
+}
+
 .border-glass {
   border-color: $sy2d-glass;
 }
 
+
+.color-glass {
+  color: $sy2d-glass;
+}
+
+.color-night {
+  color: $sy2d-night;
+}
+
+.color-apple {
+  color: $sy2d-apple;
+}
+
+.color-violet {
+  color: $sy2d-violet;
+}
+
+.color-bubble {
+  color: $sy2d-bubble;
+}
+
+.color-leaf {
+  color: $sy2d-leaf;
+}
+
+.color-dark-grey {
+  color: $sy2d-dark-gray;
+}
+
+
 .about-title {
+  &:after {
+    @extend .background-apple;
+  }
   @extend .title-underline;
 }
 
-.about-title:after {
-  @extend .background-glass;
+.schedule-title {
+  &:after {
+    @extend .background-bubble;
+  }
+  @extend .title-underline;
+}
+
+.schedule-day-title {
+  //&:after {
+  //  @extend .background-bubble;
+  //}
+  //@extend .subtitle-underline;
+  @extend .background-bubble;
+  display: table;
+  border-radius: 50px;
+  padding: .25rem 1rem;
+  color: white;
 }
 
 .font-italic {
@@ -249,4 +336,39 @@ h1 {
   @extend .text-center;
   padding-top: .5rem;
   padding-bottom: 1.5rem;
+}
+
+.event-time {
+  @extend .font-weight-bold;
+  @extend .f-20;
+  max-width: 200px;
+  width: 200px;
+}
+
+.event-event {
+  @extend .font-weight-bold;
+  @extend .f-20;
+  @extend .color-bubble;
+}
+
+.event-location {
+  line-height: 1;
+  @extend .color-dark-grey;
+}
+
+.event-info {
+  min-width: 220px;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.nomargin {
+  margin: 0;
+}
+
+.nospacing {
+  @extend .nopadding;
+  @extend .nomargin;
 }

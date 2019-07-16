@@ -1,14 +1,16 @@
 import React from 'react';
-import {Row, Col} from "reactstrap";
 
 const ScheduleItem = (props) => {
   const {event} = props;
   return (
     <React.Fragment>
-      <Row>
-        <Col className="float-right">{event.time}</Col>
-        <Col className="float-left">{event.event}</Col>
-      </Row>
+      <tr>
+        <td className="event-time"><span>{event.time}</span></td>
+        <td className="event-info">
+          <span className="event-event">{event.event}</span>
+          {!!event.location && <p className="event-location">{event.location}</p> }
+        </td>
+      </tr>
     </React.Fragment>
   )
 };
