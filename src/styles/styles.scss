@@ -346,7 +346,7 @@ h1 {
   transition: .1s;
   @extend .font-weight-bold;
   @extend .nomargin;
-  padding-bottom: .5rem;
+  padding: .25rem;
 }
 .font-italic {
   font-style: italic;
