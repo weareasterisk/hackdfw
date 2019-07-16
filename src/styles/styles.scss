@@ -267,6 +267,10 @@ h1 {
   background: $sy2d-leaf;
 }
 
+.background-warm-gray {
+  background: $sy2d-warm-gray;
+}
+
 .border-glass {
   border-color: $sy2d-glass;
 }
@@ -327,6 +331,23 @@ h1 {
   color: white;
 }
 
+.faq-title {
+  &:after {
+    @extend .background-violet;
+  }
+  @extend .title-underline;
+}
+
+.faq-question {
+  &:hover {
+    @extend .background-violet;
+    background-color: rgba($sy2d-bubble, .2);
+  }
+  transition: .1s;
+  @extend .font-weight-bold;
+  @extend .nomargin;
+  padding-bottom: .5rem;
+}
 .font-italic {
   font-style: italic;
 }
