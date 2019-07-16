@@ -37,7 +37,8 @@ export default class FAQ extends Component {
                   <p className="faq-question"
                      onClick={() => this.changeFAQ(i)}
                   >
-                    {entry.question}
+                    {/* TODO: Change > to component*/}
+                    > {entry.question}
                   </p>
                 )
               }
