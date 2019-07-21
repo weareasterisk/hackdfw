@@ -34,17 +34,17 @@ export default class FAQ extends Component {
             <Col md={4}>
               {
                 data.map((entry, i) =>
-                  <p className="faq-question"
+                  <p className={this.state.question === entry.question ? "faq-question faq-highlighted" : "faq-question"}
                      onClick={() => this.changeFAQ(i)}
                   >
                     {/* TODO: Change > to component*/}
-                    > {entry.question}
+                    {entry.question}
                   </p>
                 )
               }
             </Col>
             <Col md={7}>
-              <h4 className="font-weight-medium"> {question} </h4>
+              <h3 className="font-weight-medium"> {question} </h3>
               {ReactHtmlParser(text)}
             </Col>
           </Row>

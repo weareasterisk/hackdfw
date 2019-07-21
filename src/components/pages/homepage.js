@@ -12,7 +12,6 @@ export default class HomePage extends Component {
     return (
       <React.Fragment>
         <Start/>
-
         <SectionSpacer/>
 
         <About/>
@@ -30,7 +29,6 @@ export default class HomePage extends Component {
         />
 
         <SectionSpacer/>
-
       </React.Fragment>
     )
   }

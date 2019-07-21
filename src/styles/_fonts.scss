@@ -15,3 +15,36 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Sentinel Book';
+  src: url('https://cdn.weareasterisk.com/fonts/sentinel/Sentinel-Book.woff2') format('woff2'),
+  url('https://cdn.weareasterisk.com/fonts/sentinel/Sentinel-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url('https://cdn.weareasterisk.com/fonts/sentinel/Sentinel-BoldItalic.woff2') format('woff2'),
+  url('https://cdn.weareasterisk.com/fonts/sentinel/Sentinel-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url('https://cdn.weareasterisk.com/fonts/sentinel/Sentinel-Medium.woff2') format('woff2'),
+  url('https://cdn.weareasterisk.com/fonts/sentinel/Sentinel-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url('https://cdn.weareasterisk.com/fonts/sentinel/Sentinel-Bold.woff2') format('woff2'),
+  url('https://cdn.weareasterisk.com/fonts/sentinel/Sentinel-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+

@@ -9,7 +9,12 @@ body {
 
 h1 {
   @extend .font-weight-medium;
-  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Brandon Grotesque", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .table td {
@@ -18,9 +23,17 @@ h1 {
 }
 
 .start-section {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: auto;
-  background-image: linear-gradient($sy2d-glass, $sy2d-glass-2);
+  background: url("https://cdn.weareasterisk.com/hackathon-assets/hackdfw/artwork/sy2d-skyline.svg") no-repeat bottom, linear-gradient($sy2d-glass, $sy2d-glass-2);
+}
+
+.sy2d-background {
+  width: 100%;
+  flex: 1;
+  //background: transparent url("https://cdn.weareasterisk.com/hackathon-assets/hackdfw/artwork/white-skyline-grass.svg") no-repeat bottom;
 }
 
 .navbar-brand {
@@ -85,6 +98,7 @@ h1 {
   font-weight: 500;
   color: white;
   transition: 0.2s;
+  mix-blend-mode: difference;
 }
 
 .link-white:hover {
@@ -197,15 +211,23 @@ h1 {
 .start-info {
   @extend .font-weight-medium;
   @extend .text-center;
-  @extend .f-20;
+  @extend .f-24;
 }
 
 .section-spacer {
   height: 3.375rem;
 }
 
+.f-18 {
+  font-size: 18px;
+}
+
 .f-20 {
   font-size: 20px;
+}
+
+.f-24 {
+  font-size: 24px;
 }
 
 .about-text {
@@ -343,11 +365,18 @@ h1 {
     @extend .background-violet;
     background-color: rgba($sy2d-bubble, .2);
   }
+  @extend .f-18;
   transition: .1s;
   @extend .font-weight-bold;
   @extend .nomargin;
-  padding: .25rem;
+  padding: .32rem;
 }
+
+.faq-highlighted {
+  @extend .background-violet;
+  background-color: rgba($sy2d-bubble, .2);
+}
+
 .font-italic {
   font-style: italic;
 }
