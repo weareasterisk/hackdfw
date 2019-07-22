@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
 .sy2d-background {
   width: 100%;
   flex: 1;
-  //background: transparent url("https://cdn.weareasterisk.com/hackathon-assets/hackdfw/artwork/white-skyline-grass.svg") no-repeat bottom;
 }
 
 .navbar-brand {
@@ -167,9 +166,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .image-center {
-  display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
+  display: block;
 }
 
 .sy2d-image {
@@ -363,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 .faq-question {
   &:hover {
     @extend .background-violet;
-    background-color: rgba($sy2d-bubble, .2);
+    background-color: rgba($sy2d-bubble, .4);
   }
   @extend .f-18;
   transition: .1s;
@@ -373,8 +373,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .faq-highlighted {
-  @extend .background-violet;
-  background-color: rgba($sy2d-bubble, .2);
+  background-color: rgba($sy2d-violet, .9) !important;
+  color: white !important;
+}
+
+.sponsors-title {
+  &:after {
+    @extend .background-glass;
+  }
+  @extend .title-underline;
+}
+
+.sponsors-row {
+  @extend .justify-content-center;
+  @extend .align-items-center;
+  padding-bottom: 1.8rem;
+}
+
+.sponsors-col {
+  padding: .5rem;
 }
 
 .font-italic {
