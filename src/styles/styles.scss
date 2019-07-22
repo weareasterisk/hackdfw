@@ -17,6 +17,16 @@ h1, h2, h3, h4, h5, h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*
+.nav-center {
+  background-color: white;
+  .nav-link {
+    color: black !important;
+    @extend .link-black;
+  }
+}
+*/
+
 .table td {
   border: 0;
   padding: .5rem;
@@ -54,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .navbar-nav {
     padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .col-1 {
@@ -91,20 +102,39 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.link-white {
+.link-base {
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 500;
-  color: white;
   transition: 0.2s;
 }
 
-.link-white:hover {
-  color: white;
+.link-base:hover {
   text-decoration: none;
-  border-bottom: 4px solid white;
   padding-bottom: 4px;
   display: inline-block;
+}
+
+.link-white {
+  @extend .link-base;
+  color: white;
+}
+
+.link-white:hover {
+  @extend .link-base:hover;
+  color: white;
+  border-bottom: 4px solid white;
+}
+
+.link-black {
+  @extend .link-base;
+  color: black;
+}
+
+.link-black:hover {
+  @extend .link-base:hover;
+  color: black;
+  border-bottom: 4px solid black;
 }
 
 .navbar-toggler {

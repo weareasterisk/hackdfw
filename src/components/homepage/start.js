@@ -45,10 +45,10 @@ const backgroundSuffix = `${backgroundColours[0]}, ${backgroundColours[1]}`;
 const Start = () => {
   return (
     <header role="main">
+      <GlobalNavBar/>
       <div className="start-section" style={{
         background: backgroundPrefix + `linear-gradient(${backgroundSuffix})`,
       }}>
-        <GlobalNavBar/>
         <div className="sy2d-background">
           <img className="sy2d-image" src="https://cdn.weareasterisk.com/hackathon-assets/hackdfw/sy2d-fall-2019/blackSY2D-h-slim.svg" alt="hackdfw powered by say yes to dallas"/>
           <div className="start-info">
