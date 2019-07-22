@@ -1,10 +1,12 @@
 const title = {
   url: "https://cdn.weareasterisk.com/hackathon-assets/hackdfw/sy2d-fall-2019/blackSY2D-h-slim.svg",
+  link: "",
   alt: "Say Yes to Dallas"
 };
 
 const presenting = {
   url: "https://via.placeholder.com/500",
+  link: "",
   alt: ""
 };
 
@@ -14,7 +16,7 @@ const gold = [
     alt: ""
   },
   {
-    url: "https://cdn.weareasterisk.com/hackathon-assets/hackdfw/sy2d-fall-2019/blackSY2D-h-slim.svg    ",
+    url: "https://cdn.weareasterisk.com/hackathon-assets/hackdfw/sy2d-fall-2019/blackSY2D-h-slim.svg",
     alt: ""
   },
   {
